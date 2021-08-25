@@ -17,7 +17,7 @@
             </router-link>
           </td>
 
-          <td>{{ task.date }}</td>
+          <td>{{ new Date(task.date).toLocaleDateString() }}</td>
           <td>{{ task.description }}</td>
           <td>{{ task.status }}</td>
         </tr>
