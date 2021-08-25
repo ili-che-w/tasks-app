@@ -6,6 +6,7 @@
       <div class="input-field">
         <input id="title" type="text" class="validate" required />
         <label for="title">Title</label>
+        <span class="helper-text" data-error="Title is required"></span>
       </div>
 
       <div class="chips" ref="tags"></div>
