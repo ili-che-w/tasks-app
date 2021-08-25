@@ -7,6 +7,20 @@
         <input id="title" type="text" class="validate" required />
         <label for="title">Title</label>
       </div>
+
+      <div class="chips" ref="tags"></div>
     </div>
   </div>
 </template>
+
+<script>
+import M from 'materialize-css/dist/js/materialize.min'
+
+export default {
+  mounted() {
+    M.Chips.init(this.$refs.tags, {
+      placeholder: 'Task tags'
+    })
+  }
+}
+</script>
