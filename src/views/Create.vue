@@ -77,9 +77,9 @@ export default {
     createTask() {
       const task = {
         id: Date.now(),
-        title: this.title,
+        title: this.title.trim(),
         tags: this.tags.chipsData,
-        description: this.description,
+        description: this.description.trim(),
         date: this.date.date,
         status: 'active'
       }
