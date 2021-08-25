@@ -85,6 +85,7 @@ export default {
       }
 
       this.$store.dispatch('createTask', task)
+      this.$router.push('/list')
     }
   }
 }
