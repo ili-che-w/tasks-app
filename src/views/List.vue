@@ -2,7 +2,7 @@
   <div>
     <h1>List of Tasks</h1>
 
-    <table>
+    <table v-if="tasks.length">
       <tbody>
         <tr v-for="(task, idx) in tasks" :key="idx">
           <td>
@@ -23,6 +23,8 @@
         </tr>
       </tbody>
     </table>
+
+    <p v-else>No tasks</p>
   </div>
 </template>
 
