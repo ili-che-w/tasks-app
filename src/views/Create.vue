@@ -23,6 +23,8 @@
           {{ description.length }}/{{ descriptionMaxLength }}
         </span>
       </div>
+
+      <input type="text" ref="datepicker">
     </div>
   </div>
 </template>
@@ -40,6 +42,12 @@ export default {
   mounted() {
     M.Chips.init(this.$refs.tags, {
       placeholder: 'Task tags'
+    })
+    M.Datepicker.init(this.$refs.datepicker, {
+      format: 'dd.mm.yyyy',
+      defaultDate: new Date(),
+      setDefaultDate: true,
+      firstDay: 1
     })
   }
 }
