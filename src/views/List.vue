@@ -3,6 +3,16 @@
     <h1>List of Tasks</h1>
 
     <table v-if="tasks.length">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>title</th>
+          <th>date</th>
+          <th>description</th>
+          <th>status</th>
+        </tr>
+      </thead>
+
       <tbody>
         <tr v-for="(task, idx) in tasks" :key="idx">
           <td>
