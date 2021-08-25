@@ -84,7 +84,7 @@ export default {
         status: 'active'
       }
 
-      console.log(task)
+      this.$store.dispatch('createTask', task)
     }
   }
 }
