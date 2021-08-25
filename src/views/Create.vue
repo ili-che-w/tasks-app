@@ -25,6 +25,8 @@
       </div>
 
       <input type="text" ref="datepicker">
+
+      <button class="btn" type="submit">Create task</button>
     </div>
   </div>
 </template>
