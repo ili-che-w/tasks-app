@@ -14,3 +14,12 @@
     </div>
   </nav>
 </template>
+
+<style lang="scss" scoped>
+@import '~materialize-css/sass/materialize';
+
+nav {
+  @extend .blue, .darken-3;
+  padding: 0 2rem;
+}
+</style>
