@@ -18,7 +18,11 @@
           </td>
 
           <td>{{ new Date(task.date).toLocaleDateString() }}</td>
-          <td>{{ task.description }}</td>
+
+          <td class="task-description">
+            <div class="text">{{ task.description }}</div>
+          </td>
+
           <td>{{ task.status }}</td>
         </tr>
       </tbody>
@@ -37,3 +41,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.task-description {
+  max-width: 400px;
+
+  .text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+</style>
