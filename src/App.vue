@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~materialize-css/dist/css/materialize.css';
+@import '~materialize-css/sass/materialize';
 </style>
